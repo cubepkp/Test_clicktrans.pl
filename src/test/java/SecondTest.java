@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
-import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -31,7 +30,6 @@ public class SecondTest {
 
         String success_message = driver.findElement(By.xpath("//div[@class='ui success message']")).getText();
         assertThat(success_message).isEqualTo("OK - some registration logic is mocked");
-        //assertThat(success_message).isEqualTo("OK - some registration logic is mocke");
     }
 
     @AfterTest
